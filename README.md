@@ -10,10 +10,10 @@ linux process monitor
 Check if `screen` and `pidof` installed, if not install it
 
 ###crontab
-Add crontab job (default 2min)
-1) open terminal
-2) type `crontab -e`
-3) add line `/2 * * * * /usr/bin/php /path/to/watcher/index.php > /dev/null 2>&1`
+Add crontab job (default 2min)  
+1) open terminal  
+2) type `crontab -e`  
+3) add line `/2 * * * * /usr/bin/php /path/to/watcher/index.php > /dev/null 2>&1`  
 
 ###process
 Open `/path/to/watcher/Queue.php` and add process for monitoring:
