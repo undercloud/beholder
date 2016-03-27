@@ -1,11 +1,13 @@
 <?php
 
 	return array(
+		// section for binary files like apache, nginx, mysql
 		'pidof' => array(
-			'bapache2' => 'bapache2ctl -k start'
+			
 		),
+		//section for jobs running in screen
 		'screen' => array(
-			'pinta' => 'screen -AdmS pinta /usr/bin/pinta'
+			
 		)
 	);
 ?>
