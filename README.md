@@ -2,7 +2,7 @@
 linux process monitor
 
 ##installation
-`composer require unercloud/beholder`
+`composer require unercloud/beholder==dev-master`
 
 ##configuration
 
