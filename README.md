@@ -1,4 +1,4 @@
-# watcher
+# beholder
 linux process monitor
 
 ##installation
@@ -15,14 +15,14 @@ Add crontab job (default 2min)
 2) type `crontab -e`  
 3) add line `/2 * * * * /usr/bin/php /path/to/watcher/index.php > /dev/null 2>&1`  
 
-###process
+###monitor
 Open `/path/to/watcher/Queue.php` and add process for monitoring:
 
 ```PHP
 <?php
 	return [
 		// section for binary files like apache, nginx, mysql
-		'pidof' => [
+		'pidof' => [ 
 			'apache2' => '/usr/sbin/apache2ctl -k start'		
 		],
 		//section for jobs running in screen
