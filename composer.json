@@ -1,0 +1,12 @@
+{
+    "name": "undercloud/beholder",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "undercloud",
+            "email": "lodashes@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

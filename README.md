@@ -2,7 +2,7 @@
 linux process monitor
 
 ##installation
-
+`composer require unercloud/beholder`
 
 ##configuration
 
@@ -10,13 +10,13 @@ linux process monitor
 Check if `screen` and `pidof` installed, if not install it
 
 ###crontab
-Add crontab job (default 2min)  
+Add crontab job (default 2 min)  
 1) open terminal  
 2) type `crontab -e`  
-3) add line `/2 * * * * /usr/bin/php /path/to/watcher/index.php > /dev/null 2>&1`  
+3) add line `/2 * * * * /usr/bin/php /path/to/beholder/index.php > /dev/null 2>&1`  
 
 ###monitor
-Open `/path/to/watcher/Queue.php` and add process for monitoring:
+Open `/path/to/beholder/Queue.php` and add process for monitoring:
 
 ```PHP
 <?php
@@ -34,4 +34,4 @@ Open `/path/to/watcher/Queue.php` and add process for monitoring:
 ```
 
 ###logs
-Open `/path/to/watcher/Settings.php` and add path to logs in `logpath` section.
+Open `/path/to/beholder/Settings.php` and add path to logs in `logpath` section.
